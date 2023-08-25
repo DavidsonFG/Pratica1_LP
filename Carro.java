@@ -16,5 +16,13 @@ public class Carro {
             System.out.println("carro novo");
         else
             System.out.println("inválido");
+
+        placa= placa.toUpperCase();
+        for (int i=0;i<placa.length();i++){
+            if (placa.charAt(i)=='A'|| placa.charAt(i)=='E'|| placa.charAt(i)=='I'|| placa.charAt(i)=='O'|| placa.charAt(i)=='U')
+                placa =placa.replace(placa.charAt(i),'*');
+        }
+        System.out.println("Placa alterada"+ placa);
     }
+
 }
